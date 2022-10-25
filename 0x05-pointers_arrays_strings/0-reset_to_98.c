@@ -1,18 +1,12 @@
-#include "main.h"
-#include <stdio.h>
+#include <main.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * reset_to_98 - function that takes pointers to var type int
+ *and updates tje value it points to 98
+ *@n: input
+ * Return: Always n
  */
 void reset_to_98(int *n)
 {
-int n;
-
-n = 402;
-printf("n=%d\n", n);
-reset_to_98(&n);
-printf("n=%d\n", n);
-return (0);
+    *n = 98;
 }
